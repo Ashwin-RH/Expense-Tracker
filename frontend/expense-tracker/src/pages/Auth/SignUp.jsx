@@ -115,7 +115,7 @@ const SignUp=() =>{
               placeholder="samhita@gmail.com"
               type="text"
             />
-            <div className="col-span-2">
+            <div className="col-span-1 sm:col-span-2">
               <Input
                 value={password}
                 onChange={({target}) => setPassword(target.value)}
