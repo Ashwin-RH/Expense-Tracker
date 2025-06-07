@@ -18,7 +18,11 @@ app.use(
         allowedHeaders:["Content-Type","Authorization"],
     })
 );
-    
+
+app.get('/', (req, res) => {
+  res.send('Expense Tracker Backend is running!');
+});
+
 app.use(express.json());
 
 connectDB();
