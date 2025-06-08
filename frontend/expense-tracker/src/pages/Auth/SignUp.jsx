@@ -8,6 +8,7 @@ import axiosInstance from "../../utils/axiosInstance";
 import { API_PATHS } from "../../utils/apiPaths";
 import { UserContext } from "../../context/userContext";
 import uploadImages from "../../utils/uploadImage";
+import toast from "react-hot-toast"; 
 
 
 const SignUp=() =>{
