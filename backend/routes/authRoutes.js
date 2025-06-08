@@ -21,9 +21,9 @@ router.post("/upload-image", upload.single("image"), (req, res) => {
   }
 
   // Use BASE_URL from env if set, else fallback to current host
-  const BASE_URL = process.env.BASE_URL || `${req.protocol}://${req.get("host")}`;
+  const BASE_URL = process.env.BASE_URL?.replace(/^http:/, 'https:') || `https://${req.get("host")}`;
 
-  const imageUrl = `${BASE_URL}/uploads/${req.file.filename}`;
+const imageUrl = `${BASE_URL}/uploads/${req.file.filename}`;
 
   res.status(200).json({ imageUrl });
 });
