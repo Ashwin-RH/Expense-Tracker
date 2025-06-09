@@ -6,7 +6,10 @@ const AuthLayout=({ children}) => {
   return <div className="flex">
     {/* Left side: Auth form */}
     <div className="w-screen h-screen md:w-[60vw] px-12 pt-8 pb-12">
+      <div className="flex items-center gap-2">        
+          <img src="/StashUp.png" alt="Logo" className="w-15 h-15 rounded-full "/>
         <h2 className="text-lg font-medium text-black ">Stash Up</h2>
+        </div>
         {children}
        </div> 
 
