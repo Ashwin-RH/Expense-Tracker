@@ -75,7 +75,7 @@ expense-tracker/
 ## 🚀 Live Demo
 
 Check out the live version here:  
-👉 [Stash Up] (https://stashup.vercel.app/login)
+👉 [Stash Up](https://stashup.vercel.app/login)
 
 
 
