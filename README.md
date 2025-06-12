@@ -30,7 +30,7 @@ A full-stack Expense Tracker web application that allows users to add, track, an
 ## 📁 Project Structure
 ```
 expense-tracker/
-├── frontend/               # React frontend
+├── frontend/expense-tracker               # React frontend
 │   ├── public/
 │   ├── src/
 │   │   ├── components/     # Reusable UI components (Navbar, Forms, etc.)
