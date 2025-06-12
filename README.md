@@ -53,6 +53,26 @@ expense-tracker/
 └── .gitignore
 ```
 
+## 🖼️ Screenshots
+
+### 🔹 Login Page
+![Login Page](frontend/expense-tracker/public/login.png)
+
+### 🔹 Sign Up Page
+![Login Page](frontend/expense-tracker/public/signup.png)
+
+### 🔹 Dashboard
+![Dashboard](frontend/expense-tracker/public/dashboard_1.png)
+
+![Dashboard](frontend/expense-tracker/public/dashboard_2.png)
+
+### 🔹 Income Page
+![Login Page](frontend/expense-tracker/public/income.png)
+
+### 🔹 Expense Page
+![Login Page](frontend/expense-tracker/public/expense.png)
+
+
 
 
 
