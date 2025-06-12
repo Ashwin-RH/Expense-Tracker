@@ -53,6 +53,15 @@ expense-tracker/
 └── .gitignore
 ```
 
+## 🚀 Live Demo
+
+Check out the live version here:  
+👉 [Stash Up](https://stashup.vercel.app/login)
+
+> ⚠️ **Note:** The backend is hosted on Render's free tier.  
+> It may take **20–30 seconds to wake up** if it's been idle — please be patient!
+
+
 ## 🖼️ Screenshots
 
 ### 🔹 Login Page
@@ -72,10 +81,7 @@ expense-tracker/
 ### 🔹 Expense Page
 ![Login Page](frontend/expense-tracker/public/expense.png)
 
-## 🚀 Live Demo
 
-Check out the live version here:  
-👉 [Stash Up](https://stashup.vercel.app/login)
 
 
 
