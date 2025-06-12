@@ -1,6 +1,6 @@
 # 💰 StashUp (Expense Tracker)
 
-A full-stack Expense Tracker web application that allows users to add, track, and manage their daily expenses and incomes with ease.
+A full-stack personal finance web application — built to help users add, track, and manage their daily expenses and incomes with ease.
 
 
 ## 📌 Features
