@@ -1,34 +1,63 @@
-Expense Tracker
+# 💰 Expense Tracker
+
 A full-stack Expense Tracker web application that allows users to add, track, and manage their daily expenses and incomes with ease.
 
-📌 Features
-🔐 User Authentication (Signup & Login)
 
-➕ Add income and expense transactions
+## 📌 Features
 
-📊 View total balance, income, and expense
+- 🔐 User Authentication (Signup & Login)
+- ➕ Add income and expense transactions
+- 📊 View total balance, income, and expense
+- 📅 Track transactions by date
+- 🧾 Delete transactions
+- 📈 Dashboard with overview and transaction history
+- 🎨 Clean, responsive UI with modern design
 
-📅 Track transactions by date
 
-🧾 Delete transactions
+## 🛠️ Tech Stack
 
-📈 Dashboard with overview and transaction history
+### 🔹 Frontend
+- React.js  
+- Tailwind CSS *(or your styling choice)*  
+- Axios *(for API calls)*
 
-🎨 Clean, responsive UI with modern design
+### 🔹 Backend
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose *(for data storage)*  
+- JWT *(for authentication)*
 
-🛠️ Tech Stack
-🔹 Frontend
-React.js
+## 📁 Project Structure
+```
+expense-tracker/
+├── frontend/               # React frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/     # Reusable UI components (Navbar, Forms, etc.)
+│   │   ├── pages/          # Page components (Dashboard, Login, etc.)
+│   │   ├── services/       # API calls using Axios
+│   │   ├── context/        # Global state (optional)
+│   │   └── App.js
+│   └── package.json
 
-Tailwind CSS (or your styling choice)
+├── backend/                # Node.js + Express backend
+│   ├── controllers/        # Request handling logic
+│   ├── models/             # Mongoose data models
+│   ├── routes/             # Express route definitions
+│   ├── middleware/         # Auth and other middleware
+│   ├── config/             # DB config, environment setup
+│   ├── .env                # Environment variables
+│   └── server.js           # Entry point
 
-Axios (for API calls)
+├── README.md
+└── .gitignore
+```
 
-🔹 Backend
-Node.js
 
-Express.js
 
-MongoDB + Mongoose (for data storage)
 
-JWT (for authentication)
+ 
+
+
+
+
