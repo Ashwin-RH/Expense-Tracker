@@ -5,12 +5,26 @@ import {LuTrendingUpDown } from "react-icons/lu";
 const AuthLayout=({ children}) => {
   return <div className="flex">
     {/* Left side: Auth form */}
-    <div className="w-screen h-screen md:w-[60vw] px-12 pt-8 pb-12">
+    <div className="w-screen h-screen md:w-[60vw] px-12 pt-8 pb-12 flex flex-col justify-between">
       <div className="flex items-center gap-2">        
           <img src="/StashUp.png" alt="Logo" className="w-15 h-15 rounded-full "/>
         <h2 className="text-lg font-medium text-black ">Stash Up</h2>
         </div>
         {children}
+        <div className="text-center text-xs text-gray-500 relative -bottom-6 ">
+          &copy; 2025 Ashwin Haragi. All rights reserved.
+
+          <a
+            href="https://github.com/Ashwin-RH"
+            target="_blank"   //📌 Opens the link in a new browser tab.💡 Useful when linking to external sites so users don't leave your app.
+            rel="noopener noreferrer" //Prevents new tab from controlling this page (noopener)
+                                      //Also prevents the referrer URL (your site) from being sent to the target site.(noreferrer)
+            className="flex justify-center items-center gap-2 text-xs hover:text-gray-800 transition"
+            >
+              <FaGithub/>
+              github.com/Ashwin-RH
+            </a>
+        </div>
        </div> 
 
      {/* Right side: Decorative background image  */}
