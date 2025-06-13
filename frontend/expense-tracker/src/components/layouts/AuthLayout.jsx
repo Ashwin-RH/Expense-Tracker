@@ -20,7 +20,7 @@ const AuthLayout=({ children}) => {
             target="_blank"   //📌 Opens the link in a new browser tab.💡 Useful when linking to external sites so users don't leave your app.
             rel="noopener noreferrer" //Prevents new tab from controlling this page (noopener)
                                       //Also prevents the referrer URL (your site) from being sent to the target site.(noreferrer)
-            className="flex justify-center items-center gap-2 text-xs hover:text-gray-800 transition"
+            className="flex justify-center items-center gap-2 text-xs mt-1 hover:text-gray-800 transition"
             >
               <FaGithub/>
               github.com/Ashwin-RH
