@@ -28,7 +28,9 @@ const SideMenu = ({ activeMenu }) => {
   };
 
   return (
-    <div className='w-64 h-[calc(100vh-61px)] bg-white border-r border-gray-200/50 p-5 sticky top-[61px] z-20'>
+    <div className='w-64 h-[calc(100vh-61px)] bg-white border-r border-gray-200/50 p-5 sticky top-[61px] z-20 flex flex-cols justify-between'>
+
+      <div>
       <div className='flex flex-col items-center justify-center gap-3 mt-3 mb-7'>
 
         {user?.profileImageUrl && !imgError ? ( // ✅ show image only if no error
@@ -64,7 +66,10 @@ const SideMenu = ({ activeMenu }) => {
           {item.label}
         </button>
       ))}
-      <div className='text-center text-sm text-gray-500 relative -bottom-85 cursor-pointer'>
+      </div>
+
+      
+      <div className='text-center text-sm text-gray-500 relative px-4 pb-4 cursor-pointer'>
       &copy;  Ashwin Haragi
       
     </div>
