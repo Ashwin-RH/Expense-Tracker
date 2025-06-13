@@ -20,7 +20,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  res.send('Expense Tracker Backend is running!');
+  res.send('StashUp Backend is running!');
 });
 
 app.use(express.json());
