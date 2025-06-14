@@ -2,6 +2,8 @@ import React from "react";
 import CARD_2 from "../../assets/images/card2.jpg";
 import {LuTrendingUpDown } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { HiOutlineMail } from 'react-icons/hi'
 
 const AuthLayout=({ children}) => {
   return <div className="flex">
