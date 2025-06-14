@@ -28,7 +28,7 @@ const SideMenu = ({ activeMenu }) => {
   };
 
   return (
-    <div className='w-64 h-[calc(100vh-61px)] bg-white border-r border-gray-200/50 p-5 sticky top-[61px] z-20 flex flex-col justify-between'>
+    <div className='w-64 h-[calc(100vh-61px)] bg-white border-r border-gray-200/50 p-5 sticky top-[61px] z-20 flex flex-col justify-between backdrop-blur-md'>
 
       <div>
       <div className='flex flex-col items-center justify-center gap-3 mt-3 mb-7'>
@@ -38,7 +38,7 @@ const SideMenu = ({ activeMenu }) => {
             src={user.profileImageUrl}
             alt="Profile Image"
             onError={() => setImgError(true)} // ✅ catch broken image
-            className='w-20 h-20 bg-slate-400 rounded-full object-cover'
+            className='w-20 h-20 bg-slate-400 rounded-full object-cover hover:shadow-lg shadow-gray-400 cursor-pointer'
           />
         ) : (
           <CharAvatar
@@ -59,7 +59,7 @@ const SideMenu = ({ activeMenu }) => {
           key={`menu_${index}`}
           className={`w-full flex items-center gap-4 text-[15px] ${
             activeMenu === item.label ? "text-white bg-primary" : ""
-          } py-3 px-6 rounded-lg mb-3 cursor-pointer`}
+          } py-3 px-6 rounded-lg mb-3 border border-b border-gray-200/50 cursor-pointer hover:shadow-lg hover:bg-gray shadow-gray-500/50 transition`}
           onClick={() => handleClick(item.path)}
         >
           <item.icon className='text-xl' />
@@ -69,7 +69,7 @@ const SideMenu = ({ activeMenu }) => {
       </div>
 
       
-      <div className='text-center text-sm text-gray-500 px-4 pb-4 cursor-pointer'>
+      <div className='text-center text-sm text-gray-500 px-4 pb-4 cursor-pointer hover:text-gray-700'>
       &copy;  Ashwin Haragi
       
     </div>
