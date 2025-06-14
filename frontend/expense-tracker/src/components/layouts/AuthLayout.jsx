@@ -98,7 +98,7 @@ const AuthLayout=({ children}) => {
 export default AuthLayout;
 
 const StatsInfoCard = ({icon,label,value,color}) => {
-    return <div className="flex gap-6 bg-white p-4 rounded-3xl shadow-xl shadow-purple-400/40 border border-gray-200/50 z-10">
+    return <div className="flex gap-6 bg-white p-4 rounded-3xl shadow-md shadow-purple-400/40 border border-gray-200/50 z-10 hover:shadow-lg">
       <div
         className={`w-12 h-12 flex items-center justify-center text-[26px] text-white ${color} rounded-full drop-shadow-xl`}
       >
