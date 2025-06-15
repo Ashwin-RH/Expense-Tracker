@@ -28,7 +28,7 @@ const SideMenu = ({ activeMenu }) => {
   };
 
   return (
-    <div className='w-64 h-[calc(100vh-61px)] bg-white border-r border-gray-200/50 p-5 sticky top-[61px] z-20 flex flex-col justify-between backdrop-blur-md'>
+    <div className='w-64 h-[calc(100vh-61px)] bg-gray-400/50 border-r border-gray-200/50 p-5 shadow-xl shadow-gray-400 sticky top-[61px] z-20 flex flex-col justify-between backdrop-blur-[2px]'>
 
       <div>
       <div className='flex flex-col items-center justify-center gap-3 mt-3 mb-7'>
@@ -55,17 +55,22 @@ const SideMenu = ({ activeMenu }) => {
       </div>
 
       {SIDE_MENU_DATA.map((item, index) => (
-        <button
-          key={`menu_${index}`}
-          className={`w-full flex items-center gap-4 text-[15px] ${
-            activeMenu === item.label ? "text-white bg-primary" : ""
-          } py-3 px-6 rounded-lg mb-3 border border-b border-gray-200/50 cursor-pointer hover:shadow-lg hover:bg-gray shadow-gray-500/50 transition`}
-          onClick={() => handleClick(item.path)}
-        >
-          <item.icon className='text-xl' />
-          {item.label}
-        </button>
-      ))}
+  <button
+    key={`menu_${index}`}
+    className={`w-full flex items-center gap-4 text-[15px] py-3 px-6 rounded-lg mb-3 
+      shadow-md shadow-gray-500/60 border border-b border-gray-200/50 cursor-pointer 
+      hover:shadow-xl transition 
+      ${
+        activeMenu === item.label
+          ? 'border-1 border-purple-500 text-white bg-purple-500'
+          : 'bg-white/50'
+      }`}
+    onClick={() => handleClick(item.path)}
+  >
+    <item.icon className="text-xl" />
+    {item.label}
+  </button>
+))}
       </div>
 
       
