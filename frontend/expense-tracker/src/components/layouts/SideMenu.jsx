@@ -74,7 +74,7 @@ const SideMenu = ({ activeMenu }) => {
       </div>
 
       
-      <div className='text-center text-sm text-gray-500 px-4 pb-4 cursor-pointer hover:text-gray-700'>
+      <div className='text-center text-sm text-gray-500/70 px-4 pb-4 cursor-pointer hover:text-gray-700'>
       &copy;  Ashwin Haragi
       
     </div>
