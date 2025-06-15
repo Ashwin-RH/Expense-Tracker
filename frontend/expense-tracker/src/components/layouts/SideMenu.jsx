@@ -38,7 +38,7 @@ const SideMenu = ({ activeMenu }) => {
             src={user.profileImageUrl}
             alt="Profile Image"
             onError={() => setImgError(true)} // ✅ catch broken image
-            className='w-20 h-20 bg-slate-400 rounded-full object-cover hover:shadow-lg shadow-gray-400 cursor-pointer'
+            className='w-23 h-23 bg-slate-400 rounded-full border-4 border-white shadow-md object-cover hover:shadow-xl shadow-gray-400/60 cursor-pointer'
           />
         ) : (
           <CharAvatar
