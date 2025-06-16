@@ -4,6 +4,7 @@ import { UserContext } from '../../context/userContext';
 import { useNavigate } from "react-router-dom";
 import CharAvatar from '../Cards/CharAvatar';
 import toast from 'react-hot-toast';
+import { LuSettings } from "react-icons/lu";
 
 const SideMenu = ({ activeMenu }) => {
   const { user, clearUser } = useContext(UserContext);
