@@ -17,7 +17,7 @@ const CustomLegend = ({ payload }) => {
           ></div>
 
           {/* Label for the data category */}
-          <span className='text-xs text-gray-700 font-medium'>
+          <span className=' text-xs text-white/70 font-medium'>
             {entry.value}
           </span>
         </div>
