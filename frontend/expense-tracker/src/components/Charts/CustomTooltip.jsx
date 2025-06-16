@@ -7,18 +7,18 @@ const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
         return (
             // Tooltip container styling
-            <div className='bg-white shadow-md rounded-lg p-2 border border-gray-300'>
+            <div className='bg-black/40 shadow-md rounded p-2 border border-gray-300 backdrop-blur-[8px]'>
                 
                 {/* Label for the data point */}
-                <p className='text-xs font-semibold text-purple-800 mb-1'>
+                <p className='text-sm font-semibold text-white mb-1'>
                     {payload[0].name}
                 </p>
 
                 {/* Display the amount */}
-                <p className='text-sm text-gray-600'>       
+                <p className='text-sm text-white'>       
                     Amount:{" "}
-                    <span className='text-sm font-medium text-gray-900'>  
-                        ₹{payload[0].value}                               
+                    <span className='text-sm font-medium text-white'>  
+                        ₹ {payload[0].value}                               
                     </span>
                 </p>
             </div> 
