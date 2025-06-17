@@ -5,9 +5,18 @@
     <link rel="icon" type="image/png" href="/StashUp.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StashUp</title>
+
+    <!-- ✅ Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HESLTPD7NF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HESLTPD7NF');
+    </script>
   </head>
   <body>
-    <div id="root"></div>  <!--	React renders your app here-->
-    <script type="module" src="/src/main.jsx"></script> 	<!--Loads the React app -->
+    <div id="root"></div>  <!-- React renders your app here -->
+    <script type="module" src="/src/main.jsx"></script> <!-- Loads the React app -->
   </body>
 </html>
