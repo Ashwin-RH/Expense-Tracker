@@ -9,13 +9,13 @@ const Input=({value,onChange,placeholder,label,type}) =>{
   };    
   return (
     <div>
-        <label className="text-[13px] text-slate-800">{label}</label>
+        <label className="text-[13px] text-slate-200">{label}</label>
 
         <div className="input-box">
           <input
             type={type == 'password'?showPassword?'text':'password':type}
             placeholder={placeholder}
-            className="w-full bg-transparent outline-none"
+            className={`w-full bg-transparent outline-none ${type === 'date' ? 'date-white' : ''}`}
             value={value}
             onChange={(e) => onChange(e)}
             />
