@@ -17,7 +17,7 @@ const NavBar = ({activeMenu}) => {
             )}
         </button>
 
-        <h2 className='text-lg font-medium text-white'>Stash Up</h2>
+        <h2 className='text-lg font-medium text-white hover:scale-105 duration-500 transition-transform'>Stash Up</h2>
 
         {openSideMenu && (
             <div className='fixed top-[61px] -ml-4 bg-white'>
