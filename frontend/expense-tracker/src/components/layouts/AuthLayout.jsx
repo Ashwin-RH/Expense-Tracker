@@ -11,7 +11,7 @@ const AuthLayout=({ children}) => {
     <div className="w-screen h-screen md:w-[60vw] bg-gray-900 px-12 pt-8 pb-12 flex flex-col justify-between">
       <div className="flex items-center gap-3 hover:scale-101 duration-500 transtition-transform">        
           <img src="/StashUp.png" alt="Logo" className="w-15 h-15 border-2 border-white rounded-full shadow-md shadow-gray-700 "/>
-        <h2 className="text-lg font-medium text-white ">Expense Tracker</h2>
+        <h2 className="text-lg font-medium text-white ">Stash Up</h2>
         </div>
         {children}
         <div className="text-center text-xs text-gray-400 relative -bottom-6 ">
