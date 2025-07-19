@@ -60,27 +60,28 @@ const SideMenu = ({ activeMenu }) => {
         </h5>
       </div>
 
-      {SIDE_MENU_DATA.map((item, index) => (
-  <button
-    key={`menu_${index}`}
-    className={`w-full flex items-center gap-4 text-[15px] py-3 px-6 rounded-lg mb-3 
-      shadow-md shadow-gray-200/10 border border-b border-gray-100/10 cursor-pointer 
-      hover:scale-105 duration-300 transition-transform
-      ${
-        activeMenu === item.label
-          ? 'border-1 border-purple-500 text-white bg-purple-500'
-          : 'bg-gray-800/10 text-white'
-      }`}
-    onClick={() => handleClick(item.path)}
-  >
-    <item.icon className="text-xl" />
-    {item.label}
-  </button>
-))}
+            {SIDE_MENU_DATA.map((item, index) => (
+        <button
+          key={`menu_${index}`}
+          onClick={() => handleClick(item.path)}
+          className={`w-full flex items-center gap-3 text-[15px] py-3 px-6 rounded-lg mb-3
+            border border-b border-gray-100/10 cursor-pointer hover:bg-gray-800/50
+            hover:scale-105 hover:shadow-lg hover:shadow-gray-500/20
+            duration-300 transition-all transform-gpu will-change-transform
+            ${
+              activeMenu === item.label
+                ? 'border border-orange-500 text-white bg-gradient-to-r from-red-500 to-orange-500 opacity-80 hover:shadow-orange-500/10'
+                : 'bg-gray-800/10 text-white'
+            }`}
+        >
+          <item.icon className="text-xl" />
+          <span className="truncate">{item.label}</span>
+        </button>
+      ))}
       </div>
 
       
-      <div className='text-center text-sm text-gray-400/70 px-4 pb-4 cursor-pointer hover:text-white/70'>
+      <div className='text-center text-sm text-gray-400/70 px-4 pb-4 cursor-pointer hover:text-white/70 transition duration-300'>
       &copy;  Ashwin Haragi
       
     </div>

@@ -8,10 +8,10 @@ import { HiOutlineMail } from 'react-icons/hi'
 const AuthLayout=({ children}) => {
   return <div className="flex">
     {/* Left side: Auth form */}
-    <div className="w-screen h-screen md:w-[60vw] bg-gray-900 px-12 pt-8 pb-12 flex flex-col justify-between">
-      <div className="flex items-center gap-3 hover:scale-101 duration-500 transtition-transform">        
+    <div className="w-screen h-screen md:w-[60vw] bg-gray-950 px-12 pt-8 pb-12 flex flex-col justify-between">
+      <div className="flex items-center gap-3 hover:scale-101 duration-500 transtition-all">        
           <img src="/StashUp.png" alt="Logo" className="w-15 h-15 border-2 border-white rounded-full shadow-md shadow-gray-700 "/>
-        <h2 className="text-lg font-medium text-white ">Expense Tracker</h2>
+        <a href="/intro" className="text-lg font-medium text-white ">Stash Up</a>
         </div>
         {children}
         <div className="text-center text-xs text-gray-400 relative -bottom-6 ">
@@ -93,7 +93,7 @@ const AuthLayout=({ children}) => {
 
         <img
         src={CARD_2}
-        className="w-64 rounded-[20px] lg:w-[90%] absolute bottom-15 shadow-lg shadow-blue-400/15"
+        className="w-64 rounded-[20px] lg:w-[90%] absolute bottom-15 shadow-lg shadow-blue-400/15 hover:scale-105 duration-500 transition-all"
         />
 
         </div>
@@ -103,7 +103,7 @@ const AuthLayout=({ children}) => {
 export default AuthLayout;
 
 const StatsInfoCard = ({icon,label,value,color}) => {
-    return <div className="flex gap-6 bg-gray-500/40 p-4 rounded-3xl shadow-md shadow-purple-400/40 border border-gray-200/50 z-10 hover:bg-gray-600/40 hover:scale-105 duration-500 backdrop-blur-[8px]">
+    return <div className="flex gap-6 bg-gray-500/40 p-4 rounded-3xl shadow-md shadow-purple-400/40 border border-gray-200/50 z-10 hover:bg-gray-600/40 hover:scale-105 duration-500 backdrop-blur-[8px] transition-all">
       <div
         className={`w-12 h-12 flex items-center justify-center text-[26px] text-white ${color} rounded-full drop-shadow-xl backdrop-blur-[8px]`}
       >

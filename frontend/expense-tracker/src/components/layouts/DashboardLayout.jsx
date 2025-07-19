@@ -9,10 +9,13 @@ const DashboardLayout = ({ children, activeMenu }) => {
   return (
     <div className='min-h-screen bg-gray-900'>
         <NavBar activeMenu={activeMenu}/>
+        
 
         {user && (
             <div className='flex pt-[5px]'>
+                
                 <div className='max-[1080px]:hidden'>
+                    
                     <SideMenu activeMenu={activeMenu}/>
                 </div>
 

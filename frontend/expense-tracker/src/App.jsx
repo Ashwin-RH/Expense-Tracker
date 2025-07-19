@@ -13,6 +13,7 @@ import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 import UserProvider from "./context/userContext";
 import { Toaster } from 'react-hot-toast';
+import Intro from '../src/pages/Auth/Intro'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Router>    {/* Sets up the routing system (provides routing context to the app).*/}
           <Routes>    {/* Defines which component to render based on the current URL path.*/}
             <Route path="/" element={<Root />} />  {/*The <Root /> component redirects to /dashboard if the user is authenticated (token exists), otherwise to /login. */}
+            <Route path="/intro" exact element={<Intro />} />
             <Route path="/login" exact element={<Login />} />
             <Route path="/signUp" exact element={<SignUp />} />
             <Route path="/dashboard" exact element={<Home />} />
@@ -50,7 +52,7 @@ const Root = () => {
                                                           //Think of it as a mini-database in your browser.
 
   //Redirect to dashboards if authenticated,otheriwse to login (ternary operator)
-  return isAuthenticated? ( <Navigate to="/dashboard" /> ):( <Navigate to="/login"/>
+  return isAuthenticated? ( <Navigate to="/dashboard" /> ):( <Navigate to="/intro"/>
   );
 };
 

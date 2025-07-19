@@ -5,7 +5,7 @@ console.log("BASE_URL in build:", BASE_URL);
 
 const axiosInstance = axios.create({
     baseURL: BASE_URL,
-    timeout:10000,
+    timeout:20000,
     headers:{
         "Content-Type":"application/json",
         Accept: "application/json",
