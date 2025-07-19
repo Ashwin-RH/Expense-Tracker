@@ -1,5 +1,9 @@
-export const BASE_URL = "http://localhost:8000";
+const isDev = import.meta.env.MODE === 'development';
 
+export const BASE_URL = isDev
+  ? "http://localhost:8000"
+  : "https://expense-tracker-backend-kcuq.onrender.com";
+  
 export const API_PATHS = {
   AUTH: {
     LOGIN: `${BASE_URL}/api/v1/auth/login`,
