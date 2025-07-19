@@ -56,9 +56,9 @@ const Landingpage = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className='md:hidden text-white focus:outline-none'
+        className='md:hidden text-white focus:outline-none cursor-pointer'
         >
-          {isOpen ? <X size={24}/> : <Menu size={35} className='rounded-full bg-gray-800 p-1 border border-transparent'/>}
+          {isOpen ? <X size={24}/> : <Menu size={35} className='rounded-full hover:bg-zinc-800/50 p-1 border border-transparent transition duration-500'/>}
         </button>
       </div>
 
@@ -119,7 +119,7 @@ const Landingpage = () => {
         {/* Left Content */}
         <div className="max-w-lg text-white mt-5">
             <div className="text-center py-12 px-4">
-            <h2 className="text-4xl md:text-5xl tracking-tight leading-tight text-center md:text-left  text-white mb-4">Track Your Finances with a Fun Twist!</h2>
+            <h2 className="text-4xl md:text-5xl tracking-tight leading-tight font-bold text-center md:text-left  text-white mb-4">Track Your Finances with a Fun Twist!</h2>
             <p className="text-center md:text-left text-gray-300 text-sm md:text-lg">
               Add your <span className="font-semibold">income and expenses using emojis</span> like 💰, 🍔, 🚌, and more!
             </p>
@@ -179,7 +179,7 @@ const Landingpage = () => {
         </motion.div>
 
         <div className='max-w-lg text-white'>
-          <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-4'>
+          <h2 className='text-4xl md:text-5xl tracking-tight leading-tight font-bold mt-4 mb-4'>
             See Where It Goes. Grow What Comes In.
           </h2>
           <p className='text-gray-400 mb-6'>
@@ -193,7 +193,7 @@ const Landingpage = () => {
         <div className="flex flex-col md:flex-row items-center justify-center mb-30 md:mb-30 px-6 text-center md:text-left space-y-8 md:space-y-0 md:space-x-10">
         {/* Left Content */}
         <div className="max-w-lg text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl tracking-tight leading-tight font-bold mb-4">
             Know Where Every ₹upee Goes.
           </h2>
           <p className="text-gray-400 mb-3 md:mb-6">
@@ -225,7 +225,7 @@ const Landingpage = () => {
       
       
       <footer className='fixed flex flex-col bottom-1 left-1/2 -translate-x-1/2 w-[310px] md:w-[65rem] bg-gray-800/50 py-2 rounded-xl items-center justify-center border border-blue-500/20 shadow-2xl shadow-blue-500/20 z-10 backdrop-blur-md'>
-          <h2 className='text-sm md:text-md text-gray-300 md:text-gray-400 mb-2 '>&copy; 2025 Ashwin Haragi. All rights reserved</h2>
+          <h2 className='text-sm md:text-md text-gray-300 md:text-gray-400 mb-2 '>&copy; 2025 Ashwin Haragi. All rights reserved.</h2>
           <motion.div
           initial={{y:20,opacity:0}}
           animate={{y:0,opacity:1}}
