@@ -36,9 +36,7 @@ const Landingpage = () => {
 
         </motion.div>
         <div className="hidden md:flex  bg-zinc-800/50 items-center px-5 py-2 space-x-5 rounded-xl shadow-md shadow-black/40 backdrop-blur-sm">
-        <a href="/about" className=" text-sm text-white transition">
-          About
-        </a>
+        
         <a href="/login" className=" text-sm text-white transition">
           Login
         </a>
@@ -64,7 +62,7 @@ const Landingpage = () => {
 
       {isOpen && (
   <div className="md:hidden fixed top-10 right-5 w-40 mt-4 flex flex-col items-center justify-center bg-zinc-800/90 backdrop-blur-sm rounded-xl px-4 py-3 space-y-3 shadow-md shadow-black/40  z-50">
-    <a href="/about" className="w-20 mt-2 text-white text-center text-sm border-b border-gray-600 tracking-wider">About</a>
+    
     <a href="/login" className="w-20 mt-2 text-white text-center text-sm border-b border-gray-600 tracking-wider">Login</a>
     
     <div className="group inline-flex h-10 w-20 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 pl-[1.5px] pr-[2.5px] py-[2px] hover:shadow-2xl hover:shadow-purple-600/30 text-white transition">
