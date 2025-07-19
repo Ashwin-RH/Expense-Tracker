@@ -132,9 +132,9 @@ const Landingpage = () => {
               Start managing your money in a way that's <span className="italic text-gray-200">visual, simple, and fun</span>!
             </p>
           </div>
-          <div className="flex items-center justify-center  space-x-4">
+          <div className="flex items-center justify-center space-x-4">
             <div className='group inline-block'>
-              <a href='/signup' className="group inline-block text-white px-3 py-3 md:px-6 md:py-3 rounded-full bg-gray-900 transition duration-300 ease-in-out border-2 border-orange-500 group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:shadow-xl group-hover:shadow-orange-500/30 group-hover:transition group-hover:duration-300 group-hover:ease-in-out  ">
+              <a href='/signup' className="group inline-block text-white px-3 py-3 md:px-6 md:py-3 rounded-full bg-gray-900 transition duration-300 ease-in-out border-2 border-orange-500 group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:scale-102 group-hover:shadow-xl group-hover:shadow-orange-500/30 group-hover:transition group-hover:duration-300 group-hover:ease-in-out  ">
               Get Started
             </a>
             </div>
