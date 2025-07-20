@@ -9,6 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { HiMail } from 'react-icons/hi'
 import { useState } from 'react';
 import { Menu, X} from "lucide-react"
+import { SiOpenproject } from "react-icons/si";
 
 const Landingpage = () => {
 
@@ -265,6 +266,18 @@ const Landingpage = () => {
           >
             <HiMail size={22}/>
             </motion.a>
+
+            <motion.a
+            href="https://ashwinrh.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Portfolio"
+            aria-label="Portfolio"
+            className="text-fuchsia-400/70 md:text-gray-500 hover:text-fuchsia-400 hover:scale-105 transition duration-500 flex items-center"
+          >
+            <SiOpenproject size={18} />
+          </motion.a>
+
           </motion.div>
         </footer>
       </div>
