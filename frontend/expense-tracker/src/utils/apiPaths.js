@@ -1,9 +1,13 @@
 const isDev = import.meta.env.MODE === 'development';
 
-export const BASE_URL = isDev
-  ? "http://localhost:8000"
-  : "https://expense-tracker-backend-kcuq.onrender.com";
-  
+// export const BASE_URL = isDev
+//   ? "https://9098abae7a8c.ngrok-free.app" // ✅ Use ngrok URL here
+//   : "https://expense-tracker-backend-kcuq.onrender.com";
+
+// export const BASE_URL = import.meta.env.VITE_API_URL;
+
+export const BASE_URL = __API__;
+
 export const API_PATHS = {
   AUTH: {
     LOGIN: `${BASE_URL}/api/v1/auth/login`,
@@ -28,4 +32,11 @@ export const API_PATHS = {
   IMAGE: {
     UPLOAD_IMAGE: `${BASE_URL}/api/v1/auth/upload-image`,
   },
+  OCR: {
+  SCAN: `${BASE_URL}/api/v1/auto-transaction`,
+  },
+  TRANSACTIONS: {
+    SAVE: `${BASE_URL}/api/v1/transactions`,
+  },
+
 };

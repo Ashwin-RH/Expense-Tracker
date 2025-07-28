@@ -29,7 +29,7 @@ const SideMenu = ({ activeMenu }) => {
   };
 
   return (
-    <div className='w-63 h-[calc(100vh-61px)] bg-gray-900 border-r border-gray-400/50 p-5 shadow-xl shadow sticky top-[61px] z-20 flex flex-col justify-between backdrop-blur-[2px]'>
+    <div className='w-50 h-[calc(90vh-61px)] md:w-63 md:h-[calc(100vh-61px)] bg-gray-900 border-r border-gray-400/50 p-5 shadow-xl shadow sticky top-[61px] z-20 flex flex-col justify-between backdrop-blur-[2px]'>
 
       <div>
         <div className='flex justify-end'>
