@@ -6,7 +6,11 @@ const isDev = import.meta.env.MODE === 'development';
 
 // export const BASE_URL = import.meta.env.VITE_API_URL;
 
-export const BASE_URL = __API__;
+// export const BASE_URL = __API__;
+
+export const BASE_URL = isDev
+  ? __API__ // ✅ Use ngrok URL here
+  : "https://expense-tracker-backend-kcuq.onrender.com";
 
 export const API_PATHS = {
   AUTH: {
