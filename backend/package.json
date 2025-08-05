@@ -114,6 +114,7 @@
     "qs": "^6.14.0",
     "range-parser": "^1.2.1",
     "raw-body": "^3.0.0",
+    "react-toastify": "^11.0.5",
     "readable-stream": "^2.3.8",
     "readdirp": "^3.6.0",
     "router": "^2.2.0",

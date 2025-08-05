@@ -5,6 +5,7 @@ const IncomeSchema=new mongoose.Schema({
     icon:{type:String},
     source:{ type:String,required:true},//example: Salary,Frreelance, etc
     amount:{type:Number,required:true},
+    rawText: { type: String }, // Store the original text for reference
     date:{type:Date,default:Date.now},
 },{timestamps:true});
 
