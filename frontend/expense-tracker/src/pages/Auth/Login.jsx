@@ -117,7 +117,7 @@ const Login =() =>{
 
           {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
 
-          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-5 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white  transition-all duration-300 ease-in-out active:scale-95 cursor-pointer"> {/*when clicked, it triggers the form's onSubmit event,it calls handleLogin() */}
+          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-5 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white tracking-wider transition-all duration-300 ease-in-out active:scale-95 cursor-pointer"> {/*when clicked, it triggers the form's onSubmit event,it calls handleLogin() */}
             LOGIN
           </button>
 
