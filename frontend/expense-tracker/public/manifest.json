@@ -1,0 +1,33 @@
+{
+  "name": "StashUp",
+  "short_name": "StashUp",
+  "version": "1.2.5",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/StashUp.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/StashUp.png",
+      "sizes": "484x484",
+      "type": "image/png"
+    },
+    {
+      "src": "/StashUp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+  "description": "A simple and intuitive expense tracker to help you manage your finances effectively.",
+  "orientation": "portrait",
+  "scope": "/",
+  "dir": "ltr"
+}
+  ]
+}
+
