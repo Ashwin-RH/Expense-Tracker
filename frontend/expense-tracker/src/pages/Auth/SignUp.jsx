@@ -86,9 +86,9 @@ const SignUp=() =>{
 
   return (
     <AuthLayout>
-      <div className="z-10 lg:w-[100%] h-auto md:h-[60%] mt-10 md:mt-0 flex flex-col justify-center px-4 py-65  bg-gray-900/50 rounded-xl  border border-gray-800 shadow-xl shadow-blue-500/10">
+      <div className="z-10 lg:w-[100%] h-[80%] md:h-[60%] mt-10 md:mt-0 flex flex-col justify-center px-2 md:px-4 py-70 md:py-65  bg-gray-900/50 rounded-xl  border border-gray-800 shadow-xl shadow-blue-500/10">
         <h3 className="text-xl font-semibold text-white">Create an Account</h3>
-        <p className="text-xs text-slate-200 mt-[5px] mb-6">
+        <p className="text-xs text-slate-200 mt-[5px] mb-3 md:mb-6">
           Join us today by entering your details below.
         </p>
 
@@ -100,7 +100,7 @@ const SignUp=() =>{
           Passes the setProfilePic function to allow updating the image when user selects a new one */}
           <ProfilePhotoSelector image={profilePic} setImage={setProfilePic}/>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 md:gap-3 sm:gap-4">
             <Input
               value={fullName}
               onChange={({target}) => setFullName(target.value)}
@@ -129,7 +129,7 @@ const SignUp=() =>{
 
           {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
           
-          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-3 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white tracking-wider  transition-all duration-300 ease-in-out active:scale-95 cursor-pointer">
+          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-1 md:mt-3 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white tracking-wider  transition-all duration-300 ease-in-out active:scale-95 cursor-pointer">
             SIGN UP
           </button>
           
