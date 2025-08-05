@@ -89,7 +89,8 @@ const Login =() =>{
 
   return (
     <AuthLayout>
-      <div className="lg:w-[70%] h-3/4 md:h-full flex flex-col justify-center">
+      
+      <div className="lg:w-[70%] h-3/4 md:h-[50%] z-10 flex flex-col justify-center border border-gray-800 rounded-xl bg-gray-900/50 px-4 shadow-xl shadow-blue-500/10">
         <h3 className="text-xl font-semibold text-white">Welcome Back</h3>
         <p className="text-xs text-slate-200 mt-[5px] mb-6">
           Please enter details to log in
@@ -116,13 +117,13 @@ const Login =() =>{
 
           {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
 
-          <button type="submit" className="btn-primary"> {/*when clicked, it triggers the form's onSubmit event,it calls handleLogin() */}
+          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-5 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white  transition-all duration-300 ease-in-out active:scale-95 cursor-pointer"> {/*when clicked, it triggers the form's onSubmit event,it calls handleLogin() */}
             LOGIN
           </button>
 
           <p className="text-[13px] text-slate-200 mt-3">
             Don't have an account?{" "}
-            <Link className="font-medium text-primary underline" to="/signup">
+            <Link className="font-medium text-indigo-500 tracking-wider underline" to="/signup">
               SignUp
             </Link>
           </p>

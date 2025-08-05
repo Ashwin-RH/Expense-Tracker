@@ -86,7 +86,7 @@ const SignUp=() =>{
 
   return (
     <AuthLayout>
-      <div className="lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
+      <div className="z-10 lg:w-[100%] h-auto md:h-[60%] mt-10 md:mt-0 flex flex-col justify-center px-4 py-65  bg-gray-900/50 rounded-xl  border border-gray-800 shadow-xl shadow-blue-500/10">
         <h3 className="text-xl font-semibold text-white">Create an Account</h3>
         <p className="text-xs text-slate-200 mt-[5px] mb-6">
           Join us today by entering your details below.
@@ -129,13 +129,13 @@ const SignUp=() =>{
 
           {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
           
-          <button type="submit" className="btn-primary">
+          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-3 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white tracking-wider  transition-all duration-300 ease-in-out active:scale-95 cursor-pointer">
             SIGN UP
           </button>
           
           <p className="text-[13px] text-slate-200 mt-3">
             Already have an account?{" "}
-            <Link className="font-medium text-primary underline" to="/login">
+            <Link className="font-medium text-indigo-500 tracking-wider underline" to="/login">
               Login
             </Link>
           </p>

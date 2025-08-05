@@ -13,6 +13,7 @@ const AuthLayout=({ children}) => {
           <img src="/StashUp.png" alt="Logo" className="w-15 h-15 border-2 border-white rounded-full shadow-md shadow-gray-700 "/>
         <a href="/intro" className="text-lg font-medium text-white ">Stash Up</a>
         </div>
+        {/* <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-50 h-50 bg-blue-500/10 blur-2xl rounded-full "></div> */}
         {children}
         <div className="text-center text-xs text-gray-400 relative -bottom-6 ">
           &copy; 2025 Ashwin Haragi. All rights reserved.
@@ -76,24 +77,24 @@ const AuthLayout=({ children}) => {
        
 
      {/* Right side: Decorative background image  */}
-    <div className="hidden md:block w-[40vw] h-screen bg-gray-300 bg-auth-bg-img bg-no-repeat bg-center overflow-hidden p-8 relative shadow-md shadow-violet-500/40">
-        <div className="w-48 h-48 rounded-[40px] bg-purple-600 absolute -top-7 -left-5 shadow-md shadow-purple-500/40 border border-purple-300/50" />
-        <div className="w-48 h-56 rounded-[40px] border-[20px] border-fuchsia-600 absolute top-[30%] -right-10 shadow-lg shadow-fuchsia-600/40 " />
-        <div className="w-48 h-48 rounded-[40px] bg-violet-500 absolute -bottom-5 -left-5 shadow-md shadow-violet-500/40 border border-violet-300/50" />
+    <div className="hidden md:block w-[40vw] h-screen bg-gray-950 bg-auth-bg-img bg-no-repeat bg-center overflow-hidden p-8 relative">
+        <div className="w-48 h-48 rounded-[40px] bg-blue-500/10 blur-2xl absolute -top-7 left-20 shadow-md shadow-purple-500/40 border border-purple-300/50" />
+        <div className="w-48 h-56 rounded-[40px] border-[20px] border-fuchsia-600/50 blur-xl absolute top-[30%] -right-10 shadow-lg shadow-fuchsia-600/40 " />
+        <div className="w-48 h-48 rounded-[40px] bg-violet-500/20 blur-2xl absolute -bottom-5 left-20 shadow-md shadow-violet-500/40 border border-violet-300/50" />
 
         <div className="grid grid-cols-1 z-20 ">
           <StatsInfoCard
             icon={<LuTrendingUpDown />}
             label="Track Your Income & Expenses"
             value="4,30,000"
-            color="bg-primary"
+            color="bg-indigo-500/80 shadow-lg shadow-gray-900"
           />
         </div>
 
 
         <img
         src={CARD_2}
-        className="w-64 rounded-[20px] lg:w-[90%] absolute bottom-15 shadow-lg shadow-blue-400/15 hover:scale-105 duration-500 transition-all"
+        className="w-64 rounded-[20px] lg:w-[90%] absolute bottom-15 shadow-lg shadow-blue-400/15 hover:scale-105 duration-500 opacity-80 transition-all"
         />
 
         </div>
@@ -103,7 +104,7 @@ const AuthLayout=({ children}) => {
 export default AuthLayout;
 
 const StatsInfoCard = ({icon,label,value,color}) => {
-    return <div className="flex gap-6 bg-gray-500/40 p-4 rounded-3xl shadow-md shadow-purple-400/40 border border-gray-200/50 z-10 hover:bg-gray-600/40 hover:scale-105 duration-500 backdrop-blur-[8px] transition-all">
+    return <div className="flex gap-6 bg-gray-800/40 p-4 rounded-3xl shadow-xl shadow-blue-500/10 border border-gray-700/50 z-10 hover:bg-gray-700/40 hover:scale-105 duration-500 backdrop-blur-md transition-all">
       <div
         className={`w-12 h-12 flex items-center justify-center text-[26px] text-white ${color} rounded-full drop-shadow-xl backdrop-blur-[8px]`}
       >
