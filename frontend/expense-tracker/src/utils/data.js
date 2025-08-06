@@ -30,5 +30,6 @@ export const SIDE_MENU_DATA=[
         label:"Logout",
         icon: LuLogOut,
         path:"/logout",
+        className:"hidden md:flex w-full items-center justify-start gap-2 text-sm text-white hover:bg-gray-800/20 rounded-md p-2",
     },
 ];
