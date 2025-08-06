@@ -14,7 +14,7 @@ import Expense from "./pages/Dashboard/Expense";
 import UserProvider from "./context/userContext";
 import { Toaster } from 'react-hot-toast';
 import Intro from '../src/pages/Auth/Intro';
-import Settings from "./Settings";
+import Settings from "./components/Settings";
 
 
 
