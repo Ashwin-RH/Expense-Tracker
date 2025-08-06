@@ -90,7 +90,7 @@ const Login =() =>{
   return (
     <AuthLayout>
       
-      <div className="lg:w-[70%] h-[55%] md:h-[50%] z-10 flex flex-col justify-center border border-gray-800 rounded-xl bg-gray-900/50 px-2 md:px-4 shadow-xl shadow-blue-500/10">
+      <div className="lg:w-[70%] h-[55%] md:h-[50%] z-10 flex flex-col justify-center border border-gray-800 rounded-xl bg-gray-900/50 px-2 md:px-4 shadow-xl shadow-blue-500/10 overflow-x-hidden">
         <h3 className="text-xl font-semibold text-white">Welcome Back</h3>
         <p className="text-xs text-slate-200 mt-[5px] mb-6">
           Please enter details to log in
@@ -115,9 +115,9 @@ const Login =() =>{
           type="password"
           /> 
 
-          {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
+          {error && <p className="text-red-500 text-xs ">{error}</p>}
 
-          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-4 mt-5 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white tracking-wider transition-all duration-300 ease-in-out active:scale-95 cursor-pointer"> {/*when clicked, it triggers the form's onSubmit event,it calls handleLogin() */}
+          <button type="submit" className="flex items-center justify-center w-full px-4 py-2 mb-3 mt-3 rounded-xl bg-indigo-500/80 hover:bg-indigo-500/10 text-white tracking-wider transition-all duration-300 ease-in-out active:scale-95 cursor-pointer"> {/*when clicked, it triggers the form's onSubmit event,it calls handleLogin() */}
             LOGIN
           </button>
 

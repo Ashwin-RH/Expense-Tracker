@@ -17,6 +17,10 @@ export const API_PATHS = {
     LOGIN: `${BASE_URL}/api/v1/auth/login`,
     REGISTER: `${BASE_URL}/api/v1/auth/register`,
     GET_USER_INFO: `${BASE_URL}/api/v1/auth/getUser`,
+    CHANGE_PASSWORD: `${BASE_URL}/api/v1/auth/change-password`
+  },
+  USER: {
+    UPDATE_PROFILE:`${BASE_URL}/api/v1/auth/profile`
   },
   DASHBOARD: {
     GET_DATA: `${BASE_URL}/api/v1/dashboard`,

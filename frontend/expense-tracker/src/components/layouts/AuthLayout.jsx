@@ -94,7 +94,7 @@ const AuthLayout=({ children}) => {
 
         <img
         src={CARD_2}
-        className="w-64 rounded-[20px] lg:w-[90%] absolute bottom-15 shadow-lg shadow-blue-400/15 hover:scale-105 duration-500 opacity-80 transition-all"
+        className="w-64 rounded-[20px] lg:w-[90%] absolute bottom-15 shadow-xl shadow-indigo-500/10 hover:scale-105 duration-500 opacity-80 transition-all"
         />
 
         </div>

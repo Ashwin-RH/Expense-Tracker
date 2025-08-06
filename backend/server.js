@@ -20,7 +20,7 @@ const app = express();
 app.use(
   cors({
     origin: "*", // or allow your frontend ngrok URL
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST","PATCH", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );

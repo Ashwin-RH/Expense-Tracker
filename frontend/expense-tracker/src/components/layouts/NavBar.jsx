@@ -30,7 +30,7 @@ const NavBar = ({activeMenu}) => {
 
 
   return (
-    <div className='flex gap-5 bg-black/30 shadow-md border border-b border-gray-900 backdrop-blur-[8px] py-4 px-7 sticky top-0 z-30'>
+    <div className='flex gap-5 bg-black/30 shadow-md border border-b border-gray-900 backdrop-blur-[8px] py-4 px-7 sticky top-0 z-20'>
         <div className=' flex items-center gap-3'>
         <button
             className='block lg:hidden text-white hover:scale-105 duration-300 cursor-pointer'

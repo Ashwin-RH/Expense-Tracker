@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'; // ✅ added useState
 import { SIDE_MENU_DATA } from "../../utils/data";
 import { UserContext } from '../../context/userContext';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CharAvatar from '../Cards/CharAvatar';
 import toast from 'react-hot-toast';
 import { LuSettings } from "react-icons/lu";
@@ -34,7 +34,9 @@ const SideMenu = ({ activeMenu }) => {
       <div>
         <div className='flex justify-end'>
       <div className='text-white text-xl p-2 border-1 border-transparent rounded-full hover:scale-105 duration-200 transition-transform cursor-pointer'>
-        <LuSettings />
+        <Link to="/settings">
+          <LuSettings />
+        </Link>
       </div>
       </div>
       <div className='flex flex-col items-center justify-center gap-3 mt-3 mb-7'>

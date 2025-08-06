@@ -13,7 +13,9 @@ import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 import UserProvider from "./context/userContext";
 import { Toaster } from 'react-hot-toast';
-import Intro from '../src/pages/Auth/Intro'
+import Intro from '../src/pages/Auth/Intro';
+import Settings from "./components/settings";
+
 
 
 const App = () => {
@@ -29,6 +31,7 @@ const App = () => {
             <Route path="/dashboard" exact element={<Home />} />
             <Route path="/income" exact element={<Income />} />   {/* When a user visits http://yourapp.com/income, React will render the Income component. */}
             <Route path="/expense" exact element={<Expense />} />
+            <Route path="/settings" exact element={<Settings />} />
           </Routes>
         </Router>
       </div>

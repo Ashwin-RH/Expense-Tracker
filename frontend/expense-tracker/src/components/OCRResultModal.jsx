@@ -88,10 +88,10 @@ const handleSave = async () => {
   <>
   {/* <div className="modal-backdrop"> */}
   {/* Background Overlay (with blur) */}
-<div className="fixed inset-0 bg-black/50 z-40"></div>
+<div className="fixed inset-0 z-20 bg-transparent backdrop-blur-xs flex items-center justify-center">
 
 {/* Modal Content */}
-<div className="fixed w-[20rem] md:w-[35rem] top-30 left-1/2 -translate-x-1/2 inset-0 flex items-center justify-center z-50">
+<div className="fixed w-[20rem] md:w-[35rem] top-30 left-1/2 -translate-x-1/2 inset-0 flex items-center justify-center">
   <div className="relative bg-gradient-to-r from-gray-800 via-gray-850 bg-[length:150%_100%] to-gray-900 top-70 text-white rounded-2xl backdrop-blur-[20px] shadow-2xl p-6 w-[90%] border border-white/20 max-w-2xl overflow-y-auto max-h-[85vh] scrollbar-thin scrollbar-thumb-gray-600">
     <div className="flex justify-between items-center mb-4">
       <h2 className="text-xl font-semibold">Details</h2>
@@ -223,6 +223,7 @@ const handleSave = async () => {
   </div>
 )}
       </div>
+    </div>
     </div>
     {/* </div> */}
   </>
