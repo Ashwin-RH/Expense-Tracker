@@ -206,7 +206,7 @@ const handleChangePassword = async (e) => {
                                   {showOldPassword?(
                                     <FaRegEye
                                       size={22}
-                                      className="text-primary cursor-pointer"
+                                      className="text-indigo-500 cursor-pointer"
                                       onClick={()=> setShowOldPassword(false)}
                                     /> 
                                     ):(
@@ -231,7 +231,7 @@ const handleChangePassword = async (e) => {
                                   {showNewPassword?(
                                     <FaRegEye
                                       size={22}
-                                      className="text-primary cursor-pointer"
+                                      className="text-indigo-500 cursor-pointer"
                                       onClick={()=> setShowNewPassword(false)}
                                     /> 
                                     ):(
@@ -255,7 +255,7 @@ const handleChangePassword = async (e) => {
                                   {showConfirmPassword?(
                                     <FaRegEye
                                       size={22}
-                                      className="text-primary cursor-pointer"
+                                      className="text-indigo-500 cursor-pointer"
                                       onClick={()=> setShowConfirmPassword(false)}
                                     /> 
                                     ):(
