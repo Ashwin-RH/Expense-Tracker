@@ -6,7 +6,7 @@ import TransactionInfoCard from '../Cards/TransactionInfoCard'
 const ExpenseList = ({transactions, onDelete, onDownload}) => {
   return (
     <div className='card'>
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between mb-2'>
             <h5 className='text-lg text-white'>Expense Category</h5>
 
             <button className='card-btn' onClick={onDownload}>
