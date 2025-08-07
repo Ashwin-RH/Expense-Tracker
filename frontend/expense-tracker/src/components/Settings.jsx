@@ -14,6 +14,17 @@ import { API_PATHS } from '../utils/apiPaths';
 import axios from 'axios';
 
 const Settings = () => {
+
+  const SettingItem = ({ icon, label, onClick, className = '' }) => (
+  <div
+    onClick={onClick}
+    className={`flex items-center space-x-4 p-4 rounded-xl bg-gray-800/60 hover:bg-gray-700/80 hover:shadow-2xl hover:shadow-black/20 cursor-pointer transition ${className}`}
+  >
+    <div className="text-xl">{icon}</div>
+    <div className="text-sm font-medium">{label}</div>
+  </div>
+);
+
     
     const navigate=useNavigate();
 
@@ -121,9 +132,9 @@ const handleChangePassword = async (e) => {
     );
 
     toast.success(res.data.message || "Password updated!");
-    setshowOldPassword('');
-    setshowNewPassword('');
-    setshowConfirmPassword('');
+    setShowOldPassword('');
+    setShowNewPassword('');
+    setShowConfirmPassword('');
     setModal(null); // Close the modal
   } catch (err) {
     toast.error(err.response?.data?.message || "Something went wrong");
@@ -140,7 +151,7 @@ const handleChangePassword = async (e) => {
       <div className="mb-8">
         <h2 className="text-xl font-semibold mb-3"> Account Settings</h2>
         <div className="space-y-3">
-          <SettingItem icon={<FaUser />} label="Edit Profile" onClick={() => setModal('profile')}/>
+          <SettingItem icon={<FaUser />} label="Edit Profile" onClick={() => setModal('profile')} className=''/>
           <SettingItem icon={<FaLock />} label="Change Password" onClick={() => setModal('password')} />
           <SettingItem icon={<RiShieldKeyholeLine />} label="Two-Factor Authentication" onClick={() => setModal('2fa')} />
           <SettingItem icon={<IoMdLogOut />} label="Logout" onClick={() => handleClick("/logout")} />
@@ -276,6 +287,7 @@ const handleChangePassword = async (e) => {
             {modal === '2fa' && (
               <div className='flex flex-col gap-4'>
                 <h3 className="text-xl font-bold mb-4">Two-Factor Authentication</h3>
+                <button onClick={() => setModal(null)} className=" text-white text-xl p-1  hover:bg-gray-700 rounded-full duration-500 cursor-pointer"><IoMdClose size={24}/></button>
                 <form className='flex flex-col gap-3'>
                     <input 
                         type='text'

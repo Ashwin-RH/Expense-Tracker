@@ -33,9 +33,9 @@ const SideMenu = ({ activeMenu }) => {
 
       <div>
         <div className='flex justify-end'>
-      <div className='text-white text-xl p-2 border-1 border-transparent rounded-full hover:scale-105 duration-200 transition-transform cursor-pointer'>
+      <div className='flex items-center justify-center text-white text-xl p-2 border-1 border-transparent rounded-full hover:bg-gray-800 hover:scale-105 hover:shadow-md hover:shadow-black/30 duration-500 transition-all cursor-pointer'>
         <Link to="/settings">
-          <LuSettings />
+          <LuSettings size={23} />
         </Link>
       </div>
       </div>
