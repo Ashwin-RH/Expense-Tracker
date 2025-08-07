@@ -175,7 +175,7 @@ const handleChangePassword = async (e) => {
             {modal === 'profile' && (
               <div className='flex flex-col gap-4'>
                 <div className=' flex items-center justify-between'>
-                <h2 className="text-lg md:text-xl font-bold  ">Edit Profile</h2>
+                <h2 className="text-lg md:text-xl font-bold ">Edit Profile</h2>
                 <button onClick={() => setModal(null)} className=" text-white text-xl p-1  hover:bg-gray-700 rounded-full duration-500 cursor-pointer"><IoMdClose size={24}/></button>
                 </div>
                 <form onSubmit={handleSubmit} className='flex flex-col gap-3'>

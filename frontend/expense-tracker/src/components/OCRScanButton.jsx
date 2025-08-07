@@ -70,7 +70,8 @@ const handleFileChange = async (event) => {
         <OCRResultModal
           data={extractedData}
           image={imagePreview} // ✅ Pass preview
-          onClose={() => setExtractedData(null)}
+          onClose={() =>{ setExtractedData(null);
+            setImagePreview(null);}}
         />
       )}
     </>
